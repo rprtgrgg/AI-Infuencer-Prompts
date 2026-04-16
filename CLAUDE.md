@@ -129,10 +129,11 @@ Every prompt must follow this structure in order:
 3. **Where:** Specific location ("Tegallalang rice terraces, Bali" not just "Bali")
 4. **Outfit:** Specific (color + fabric + style — e.g. "flowing white linen sundress with thin spaghetti straps")
 5. **Action/Mood:** Candid direction ("looks over her shoulder with a soft smile", "laughs genuinely at something off-camera", "lost in thought, eyes slightly downcast")
-6. **Lighting:** Direction + quality ("warm low-angle golden backlight", "soft morning window light from the left")
-7. **Camera:** Specific lens + style ("shot on 85mm f/1.4", "35mm analog film", "Leica M", "iPhone 15 Pro candid")
-8. **Avoid:** glowing eyes, perfect symmetry, plastic skin, obvious AI aesthetics
-9. **End with:** "Ultra-realistic, 8K, photographic quality. No AI artifacts." (images) or "Cinematic 4K, film grain, natural motion." (video)
+6. **Background people rule:** Social settings (party, festival, concert, beach, street, nightlife, café, bar) — always add a blurred background crowd. She is sharp in the foreground; people behind her are soft bokeh. Examples: "a lively crowd of festival-goers softly blurred in the background", "blurred silhouettes of people dancing behind her", "busy nightlife crowd out of focus behind her". Solo/nature settings (empty rooftop, rice terraces alone, quiet desert) — no crowd needed.
+7. **Lighting:** Direction + quality ("warm low-angle golden backlight", "soft morning window light from the left")
+8. **Camera:** Specific lens + style ("shot on 85mm f/1.4", "35mm analog film", "Leica M", "iPhone 15 Pro candid")
+9. **Avoid:** glowing eyes, perfect symmetry, plastic skin, obvious AI aesthetics
+10. **End with:** "Ultra-realistic, 8K, photographic quality. No AI artifacts." (images) or "Cinematic 4K, film grain, natural motion." (video)
 
 ## Self-Improvement Loop
 
