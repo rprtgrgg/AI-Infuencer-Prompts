@@ -108,17 +108,31 @@ python tools/update_website.py --dry-run
 python tools/generate_prompt.py --reference "Tokyo cherry blossom content is trending"
 ```
 
+## Nova's Canon Face — ALWAYS USE THIS DESCRIPTION
+
+Nova's face is locked. Every single prompt must include this exact face block verbatim:
+
+```
+She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers.
+```
+
+**Character reference image:** The user has a saved canon face image (`nova-canon-face.jpg`) — they must upload this to Freepik Mystic / Kling / Higgsfield as the **Character Reference / Face Lock** before generating, so the face stays consistent across all posts.
+
+**Never describe her as:** "beautiful woman", "gorgeous girl", "stunning model" — these are generic and produce inconsistent AI faces. Always use the specific face block above.
+
 ## Nova's Prompt Formula
 
-Great prompts for Nova always include:
-1. **Who:** "24-year-old Vietnamese-Filipino woman" (not "beautiful girl")
-2. **Where:** Specific location (not just "beach" — "Palawan, Philippines")
-3. **Outfit:** Specific description (color, fabric, style)
-4. **Lighting:** Direction + quality ("warm golden backlight", "morning window light")
-5. **Camera:** Specific lens ("shot on 85mm f/1.4", "Leica M", "iPhone 15 Pro")
-6. **Mood:** Candid direction ("laughs genuinely", "glances back", "lost in thought")
-7. **Avoid:** "glowing eyes", "perfect symmetry", "beautiful woman" (AI tells)
-8. **End with:** "Ultra-realistic, 8K" (images) or "Cinematic 4K, film grain" (video)
+Every prompt must follow this structure in order:
+
+1. **Face block** (copy exactly from above — never skip this)
+2. **Who + age:** "A 24-year-old Vietnamese-Filipino woman"
+3. **Where:** Specific location ("Tegallalang rice terraces, Bali" not just "Bali")
+4. **Outfit:** Specific (color + fabric + style — e.g. "flowing white linen sundress with thin spaghetti straps")
+5. **Action/Mood:** Candid direction ("looks over her shoulder with a soft smile", "laughs genuinely at something off-camera", "lost in thought, eyes slightly downcast")
+6. **Lighting:** Direction + quality ("warm low-angle golden backlight", "soft morning window light from the left")
+7. **Camera:** Specific lens + style ("shot on 85mm f/1.4", "35mm analog film", "Leica M", "iPhone 15 Pro candid")
+8. **Avoid:** glowing eyes, perfect symmetry, plastic skin, obvious AI aesthetics
+9. **End with:** "Ultra-realistic, 8K, photographic quality. No AI artifacts." (images) or "Cinematic 4K, film grain, natural motion." (video)
 
 ## Self-Improvement Loop
 

@@ -3,7 +3,8 @@
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
-    "handle": "@novalinhofficial"
+    "handle": "@novalinhofficial",
+    "face_description": "Light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers."
   },
   "posts": [
     {
@@ -13,9 +14,9 @@
       "platform": "Freepik Mystic",
       "type": "image",
       "reference_image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Cinematic editorial portrait of a 24-year-old Vietnamese-Filipino woman standing alone in the Coachella Valley desert at golden hour. She wears a stunning gold-leaf embroidered crop corset with flowing tassel-trimmed high-waisted shorts — Filipino weaving patterns subtly visible in the fabric. Delicate gold accessories: layered necklaces, small ear cuffs, stacked bangles. Her dark hair is half-up with loose pieces framing her face, moving slightly in the warm desert wind. She stands with quiet confidence, one hand lifted to shield her eyes from the low sun as she gazes toward the mountains. The Indio desert landscape surrounds her — dry golden grass, warm dust haze, purple-blue mountains in the background. Rich low-angle golden light bathes everything in amber. Shot on 35mm analog film, subtle grain, slight overexposure in the highlights. Intimate and raw — not posed, not perfect. Ultra-realistic editorial fashion photography.",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman standing alone in the Coachella Valley desert at golden hour. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers. She wears a gold-leaf embroidered crop corset with flowing tassel-trimmed high-waisted shorts — subtle Filipino weaving patterns in the fabric. Delicate gold accessories: layered necklaces, small ear cuffs, stacked bangles. Her hair is half-up with loose pieces moving in the warm desert wind. One hand lifted to shield her eyes from the low sun as she gazes toward the mountains with quiet confidence. Dry golden grass, warm dust haze, purple-blue mountains in the background. Rich low-angle golden light bathes everything in amber. Shot on 35mm analog film, subtle grain, slight overexposure in highlights. Intimate, raw, not posed. Ultra-realistic, 8K, photographic quality. No AI artifacts.",
       "tags": ["festival", "coachella", "filipina", "fashion", "golden-hour"],
-      "trending_reference": "BINI became the first Filipino act to perform at Coachella 2026 this week — #BINI_CoachellaWk1 hit #1 trending globally. Their gold warrior outfits made Vogue and Teen Vogue's best-dressed lists. Filipino pride content is at peak engagement right now. Nova's Filipino roots make this the perfect moment to ride the wave."
+      "trending_reference": "BINI became the first Filipino act to perform at Coachella 2026 this week — #BINI_CoachellaWk1 hit #1 trending globally. Their gold warrior outfits made Vogue and Teen Vogue's best-dressed lists. Filipino pride content is at peak engagement right now."
     },
     {
       "id": "post-001",
@@ -24,7 +25,7 @@
       "platform": "Freepik Mystic",
       "type": "image",
       "reference_image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Cinematic portrait of a 24-year-old Vietnamese-Filipino woman standing in Bali Tegallalang rice terraces at golden hour. She wears a flowing white linen sundress with thin spaghetti straps. Warm, hazy backlight creates a golden rim around her silhouette. She looks over her shoulder with a soft, candid smile. Shot on 85mm f/1.4, shallow depth of field, warm film grain, editorial travel photography style. Ultra-realistic, 8K detail.",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman standing in the Tegallalang rice terraces, Bali, at golden hour. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers. She wears a flowing white linen sundress with thin spaghetti straps. Warm hazy backlight creates a golden rim around her silhouette. She looks over her shoulder with a soft candid smile. Shot on 85mm f/1.4, shallow depth of field, warm film grain, editorial travel photography. Ultra-realistic, 8K, photographic quality. No AI artifacts.",
       "tags": ["travel", "bali", "golden-hour", "fashion"],
       "trending_reference": "Bali rice terrace content spiked 340% on X this week. Golden-hour silhouette shots get 4–6x more engagement than mid-day shots."
     },
@@ -35,9 +36,9 @@
       "platform": "Kling AI",
       "type": "video",
       "reference_image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Short cinematic video clip: A 24-year-old Vietnamese-Filipino woman slowly walks through a narrow Tokyo alley at night. Vibrant neon signs in red, pink, and blue reflect off rain-wet cobblestones. She wears a cropped bomber jacket, black mini skirt, and platform boots. Camera follows her from slightly behind, then she turns and glances back with a playful smirk. Slow motion with light rain particles. Cinematic 24fps, anamorphic lens flare, cyberpunk-adjacent but grounded in reality.",
+      "prompt": "Cinematic video clip: A 24-year-old Vietnamese-Filipino woman slowly walks through a narrow Tokyo alley at night. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid, softly arched dark brown brows, a small straight nose, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones, and long dark brown wavy hair worn down. She wears a cropped bomber jacket, black mini skirt, and platform boots. Vibrant neon signs in red, pink, and blue reflect off rain-wet cobblestones. Camera follows from slightly behind — she turns and glances back with a playful smirk. Light rain particles, slow motion. Cinematic 24fps, anamorphic lens flare. Cinematic 4K, film grain, natural motion.",
       "tags": ["travel", "tokyo", "nightlife", "fashion", "video"],
-      "trending_reference": "Tokyo night walk videos consistently hit 500K+ plays on Threads. The wet street neon reflection aesthetic is one of the most viral visual hooks of 2026."
+      "trending_reference": "Tokyo night walk videos consistently hit 500K+ plays on Threads. Wet street neon reflection is one of the most viral visual hooks of 2026."
     },
     {
       "id": "post-003",
@@ -46,9 +47,9 @@
       "platform": "Freepik Mystic",
       "type": "image",
       "reference_image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Dreamy editorial photo of a 24-year-old Vietnamese-Filipino woman sitting on a whitewashed Santorini rooftop, legs dangling off the edge. She wears a strappy coral-pink bikini top and wide-leg linen pants. She holds a glass of white wine and laughs genuinely at something off-camera. Bright midday Mediterranean light. The Aegean Sea is vivid blue in the background with white cubic houses. Shot on analog film, slight overexposure, fashion magazine quality. Ultra-realistic.",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman sitting on a whitewashed Santorini rooftop, legs dangling off the edge. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers. She wears a strappy coral-pink bikini top and wide-leg linen pants, holds a glass of white wine and laughs genuinely at something off-camera. Bright midday Mediterranean light. The Aegean Sea is vivid blue in the background with white cubic houses. Shot on analog film, slight overexposure, fashion magazine quality. Ultra-realistic, 8K, photographic quality. No AI artifacts.",
       "tags": ["travel", "santorini", "greece", "summer", "lifestyle"],
-      "trending_reference": "Greece travel content peaks every spring on X. Candid expressions (genuine laugh, looking off-camera) outperform posed shots by 2.3x in engagement."
+      "trending_reference": "Greece travel content peaks every spring on X. Candid expressions outperform posed shots by 2.3x in engagement."
     },
     {
       "id": "post-004",
@@ -57,9 +58,9 @@
       "platform": "Higgsfield",
       "type": "video",
       "reference_image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Slow cinematic video: A beautiful 24-year-old Vietnamese-Filipino woman in a soft pink floral sundress walks through a Kyoto cherry blossom tunnel at Maruyama Park. Petals fall gently around her. She reaches up and catches a petal, smiling softly. Camera does a slow push-in from mid-shot to close-up on her face. Soft natural light, slight bokeh on falling petals. Spring pastel color grade, dreamy and feminine. 4K, cinematic motion.",
+      "prompt": "Slow cinematic video: A 24-year-old Vietnamese-Filipino woman in a soft pink floral sundress walks through a Kyoto cherry blossom tunnel at Maruyama Park. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid, softly arched dark brown brows, a small straight nose, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones, and long dark brown wavy hair worn down with face-framing layers. Petals fall gently around her. She reaches up and catches a petal, smiling softly. Camera does a slow push-in from mid-shot to close-up on her face. Soft natural light, slight bokeh on falling petals. Spring pastel color grade, dreamy and feminine. Cinematic 4K, film grain, natural motion.",
       "tags": ["travel", "kyoto", "japan", "cherry-blossom", "video"],
-      "trending_reference": "Cherry blossom content generates massive engagement every March–April. The 'catching a falling petal' micro-moment is one of the most-saved video moments in travel content."
+      "trending_reference": "Cherry blossom content generates massive engagement every March–April. The 'catching a falling petal' moment is one of the most-saved video clips in travel content."
     },
     {
       "id": "post-005",
@@ -68,9 +69,9 @@
       "platform": "Freepik Mystic",
       "type": "image",
       "reference_image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Soft morning light portrait: A 24-year-old Vietnamese-Filipino woman sits at a small bistro table inside a classic Parisian café. She holds a white ceramic café au lait with both hands, eyes slightly downcast, lost in thought. She wears an oversized cream knit sweater, minimal gold jewelry, and soft natural makeup. Warm morning sun streams through lace curtains. Film grain, muted warm tones, moody editorial. Shot on Leica 50mm. Ultra-realistic lifestyle photography.",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman sitting at a small bistro table inside a classic Parisian café. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze — eyes slightly downcast, lost in thought — softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers. She holds a white ceramic café au lait with both hands. Oversized cream knit sweater, minimal gold jewelry, soft natural makeup. Warm morning sun streaming through lace curtains. Shot on Leica 50mm, film grain, muted warm tones, moody editorial. Ultra-realistic, 8K, photographic quality. No AI artifacts.",
       "tags": ["travel", "paris", "lifestyle", "morning", "aesthetic"],
-      "trending_reference": "The 'quiet girl morning' aesthetic consistently performs on X and Threads. Paris café content pairs well with trending 'soft life' and 'that girl' aesthetics dominating lifestyle niches."
+      "trending_reference": "The 'quiet girl morning' aesthetic consistently performs on X and Threads. Paris café content pairs with trending 'soft life' aesthetics dominating lifestyle niches."
     },
     {
       "id": "post-006",
@@ -79,9 +80,9 @@
       "platform": "Kling AI",
       "type": "video",
       "reference_image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&auto=format&fit=crop&q=80",
-      "prompt": "Casual beach video: A beautiful 24-year-old Vietnamese-Filipino woman walks along a pristine white-sand beach in Palawan, Philippines at golden hour. She wears a small triangle bikini in terracotta orange and carries her sandals in one hand. Ocean waves gently lap at her feet. Camera follows her from a low angle, capturing the reflection of her legs in the wet sand. She glances back at the camera with a natural, confident smile. Warm golden light. Travel vlog aesthetic. 4K slow motion.",
+      "prompt": "Cinematic beach video: A 24-year-old Vietnamese-Filipino woman walks along a pristine white-sand beach in Palawan, Philippines at golden hour. She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid, softly arched dark brown brows, a small straight nose, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones, and long dark brown wavy hair blowing lightly in the sea breeze. She wears a small triangle bikini in terracotta orange, carries her sandals in one hand. Ocean waves lap at her feet. Low-angle camera captures the reflection of her legs in the wet sand. She glances back at the camera with a natural confident smile. Warm golden light. Travel vlog aesthetic. Cinematic 4K, slow motion, film grain.",
       "tags": ["travel", "palawan", "philippines", "beach", "video"],
-      "trending_reference": "Philippine beach content drives strong national pride engagement. Filipino audiences on X share and comment heavily. Palawan and Siargao are consistently top-performing locations."
+      "trending_reference": "Philippine beach content drives strong national pride engagement. Palawan and Siargao are consistently top-performing locations among Filipino diaspora audiences globally."
     }
   ]
 }
