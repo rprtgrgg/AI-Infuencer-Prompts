@@ -113,12 +113,19 @@ python tools/generate_prompt.py --reference "Tokyo cherry blossom content is tre
 Nova's face is locked. Every single prompt must include this exact face block verbatim:
 
 ```
-She has light-medium warm skin with a dewy natural glow, almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze, softly arched dark brown brows, a small straight nose with a slightly rounded tip, full lips with a soft cupid's bow in a natural nude-pink, an oval face with soft high cheekbones and a gentle rounded jaw, and long dark brown wavy hair that is voluminous with face-framing layers.
+She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally.
 ```
 
-**Character reference image:** The user has a saved canon face image (`nova-canon-face.jpg`) — they must upload this to Freepik Mystic / Kling / Higgsfield as the **Character Reference / Face Lock** before generating, so the face stays consistent across all posts.
+**Key imperfection cues to always include — these make her look real:**
+- Natural skin texture (pores, not airbrushed)
+- Slight asymmetry in features
+- Hair strands out of place
+- Lips not perfectly lined
+- No studio-polished lighting — natural, available light only
 
-**Never describe her as:** "beautiful woman", "gorgeous girl", "stunning model" — these are generic and produce inconsistent AI faces. Always use the specific face block above.
+**Character reference image:** The user has a saved canon face image (`nova-canon-face.jpg`) — they must upload this to Freepik Mystic / Kling / Higgsfield as the **Character Reference / Face Lock** before generating.
+
+**Never describe her as:** "beautiful woman", "gorgeous girl", "flawless skin", "perfect features" — these trigger AI over-polishing. Always use the specific face block above.
 
 ## Nova's Prompt Formula
 
@@ -131,9 +138,10 @@ Every prompt must follow this structure in order:
 5. **Action/Mood:** Candid direction ("looks over her shoulder with a soft smile", "laughs genuinely at something off-camera", "lost in thought, eyes slightly downcast")
 6. **Background people rule:** Social settings (party, festival, concert, beach, street, nightlife, café, bar) — always add a blurred background crowd. She is sharp in the foreground; people behind her are soft bokeh. Examples: "a lively crowd of festival-goers softly blurred in the background", "blurred silhouettes of people dancing behind her", "busy nightlife crowd out of focus behind her". Solo/nature settings (empty rooftop, rice terraces alone, quiet desert) — no crowd needed.
 7. **Lighting:** Direction + quality ("warm low-angle golden backlight", "soft morning window light from the left")
-8. **Camera:** Specific lens + style ("shot on 85mm f/1.4", "35mm analog film", "Leica M", "iPhone 15 Pro candid")
-9. **Avoid:** glowing eyes, perfect symmetry, plastic skin, obvious AI aesthetics
-10. **End with:** "Ultra-realistic, 8K, photographic quality. No AI artifacts." (images) or "Cinematic 4K, film grain, natural motion." (video)
+8. **Camera:** Default to iPhone for images — "shot on iPhone 15 Pro, natural light, slightly grainy, candid". Use "35mm analog film" for a moodier editorial look. Avoid "85mm studio portrait" language — too polished.
+9. **Avoid:** glowing eyes, perfect symmetry, plastic skin, airbrushed complexion, studio lighting, obvious AI aesthetics, "ultra-realistic 8K" (makes faces too perfect)
+10. **End with (images):** "Candid iPhone photo, natural light, slight digital noise, not retouched. Real, imperfect, human." OR "35mm film, natural grain, slightly overexposed. Imperfect and real."
+    **End with (videos):** "Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K."
 
 ## Self-Improvement Loop
 
