@@ -1,0 +1,294 @@
+{
+  "name": "Nova Linh — Daily Prompt & Publish",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Daily 9AM Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "requestMethod": "GET",
+        "url": "https://api.twitter.com/2/tweets/search/recent",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "query", "value": "travel girl golden hour -is:retweet has:media lang:en min_faves:500" },
+            { "name": "max_results", "value": "10" },
+            { "name": "tweet.fields", "value": "public_metrics,created_at" },
+            { "name": "sort_order", "value": "relevancy" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "x-search",
+      "name": "Search X for Trends",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300],
+      "continueOnFail": true,
+      "notes": "Requires X Bearer Token in HTTP Header Auth credential. If rate limited, the next node uses fallback data."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract top trending posts or use fallback\nconst items = $input.all();\nconst xData = items[0]?.json;\n\nlet trendingRef = '';\n\nif (xData && xData.data && xData.data.length > 0) {\n  // Sort by engagement\n  const tweets = xData.data.sort((a, b) => {\n    const engA = (a.public_metrics?.like_count || 0) + (a.public_metrics?.reply_count || 0) * 3;\n    const engB = (b.public_metrics?.like_count || 0) + (b.public_metrics?.reply_count || 0) * 3;\n    return engB - engA;\n  });\n  \n  const top3 = tweets.slice(0, 3).map(t => t.text.substring(0, 150)).join(' | ');\n  trendingRef = `Top X trends today: ${top3}`;\n} else {\n  // Fallback trend data (update weekly)\n  const fallbacks = [\n    'Golden hour travel portraits dominating X. Beach and terrace silhouette shots getting 4-6x engagement. Bali and Greece top performing locations.',\n    'Tokyo night aesthetic trending hard. Neon reflections on wet streets + candid fashion = viral formula. Cyberpunk-adjacent but grounded.',\n    'Philippines travel content surging. Palawan and Siargao driving strong diaspora engagement across X and Threads.',\n    'Cherry blossom season driving massive Japan travel content engagement. Soft pink + white aesthetic performing 3x above average.',\n    'Paris cafe morning aesthetic trending. \"Quiet girl\" and \"soft life\" lifestyle content consistently high saves and shares.',\n  ];\n  const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);\n  trendingRef = fallbacks[dayOfYear % fallbacks.length];\n}\n\nconsole.log('Trending reference:', trendingRef);\nreturn [{ json: { trending_reference: trendingRef } }];"
+      },
+      "id": "extract-trends",
+      "name": "Extract Trending Reference",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "model": "claude-sonnet-4-6",
+        "messages": {
+          "values": [
+            {
+              "role": "user",
+              "content": "=You are an expert AI image/video prompt engineer creating viral content for an AI influencer.\n\nInfluencer: Nova Linh, 24yo Vietnamese-Filipino mix. Cute+sexy, travel-obsessed, editorial but candid.\n\nToday's trending reference:\n{{ $json.trending_reference }}\n\nPlatform rotation (today pick based on day number {{ new Date().getDate() % 3 }}: 0=Freepik Mystic, 1=Kling AI, 2=Higgsfield).\n\nGenerate ONE perfect AI prompt that:\n1. Fits Nova perfectly (petite, Southeast Asian features, warm skin)\n2. Is highly likely to go viral based on the trend\n3. Includes: exact location, outfit, lighting, camera specs\n4. Avoids AI tells: no glowing eyes, no generic 'beautiful woman'\n5. Ends with platform-appropriate quality enhancers\n\nReturn ONLY this JSON (no markdown, no explanation):\n{\n  \"id\": \"post-{{ Math.floor(Date.now() / 1000) }}\",\n  \"date\": \"{{ new Date().toISOString().split('T')[0] }}\",\n  \"title\": \"5-7 word title\",\n  \"platform\": \"chosen platform\",\n  \"type\": \"image or video\",\n  \"image\": \"\",\n  \"prompt\": \"full detailed prompt\",\n  \"tags\": [\"tag1\", \"tag2\", \"tag3\", \"tag4\"],\n  \"trending_reference\": \"1-2 sentence summary\",\n  \"notes\": \"brief usage tip\"\n}"
+            }
+          ]
+        },
+        "options": {
+          "maxTokensToSample": 1000
+        }
+      },
+      "id": "generate-prompt",
+      "name": "Generate Prompt (Claude)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1,
+      "position": [960, 300],
+      "notes": "Requires Anthropic API credential in n8n. Uses claude-sonnet-4-6."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Claude's JSON response\nconst raw = $input.first().json.text || $input.first().json.content || '';\n\nlet postData;\ntry {\n  // Remove markdown code blocks if present\n  let cleaned = raw.replace(/```json\\n?/g, '').replace(/```\\n?/g, '').trim();\n  postData = JSON.parse(cleaned);\n} catch (e) {\n  console.error('Failed to parse Claude response:', raw.substring(0, 500));\n  throw new Error('Claude returned invalid JSON. Check the Generate Prompt node.');\n}\n\nif (!postData.prompt) throw new Error('No prompt in Claude response');\n\nconsole.log('Generated post:', postData.title);\nconsole.log('Platform:', postData.platform);\nconsole.log('Prompt preview:', postData.prompt.substring(0, 150));\n\nreturn [{ json: postData }];"
+      },
+      "id": "parse-response",
+      "name": "Parse Claude Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": false },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.platform }}",
+              "rightValue": "Freepik Mystic",
+              "operator": { "type": "string", "operation": "contains" }
+            }
+          ]
+        }
+      },
+      "id": "platform-router",
+      "name": "Route by Platform",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1440, 300],
+      "notes": "True = Freepik (auto-generate). False = Kling/Higgsfield (sends notification for manual generation)."
+    },
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "httpHeaderAuth",
+        "requestMethod": "POST",
+        "url": "https://api.freepik.com/v1/ai/text-to-image",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "x-freepik-api-key", "value": "={{ $credentials.httpHeaderAuth.value }}" },
+            { "name": "Accept-Language", "value": "en-US" }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "prompt": "={{ $json.prompt }}",
+          "negative_prompt": "ugly, deformed, extra fingers, distorted, blurry, low quality, watermark, text, artificial look, plastic skin",
+          "guidance_scale": 7,
+          "num_inference_steps": 30,
+          "styling": {
+            "style": "photo",
+            "color": "warm",
+            "lighting": "warm"
+          }
+        }
+      },
+      "id": "freepik-generate",
+      "name": "Generate Image (Freepik)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, 200],
+      "continueOnFail": true,
+      "notes": "Requires Freepik API key as HTTP Header Auth credential. Get key at freepik.com/api"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract image URL from Freepik response\nconst data = $input.first().json;\n\nlet imageUrl = '';\n\n// Handle direct response\nif (data.data && Array.isArray(data.data) && data.data[0]?.url) {\n  imageUrl = data.data[0].url;\n} else if (data.data?.generated?.[0]?.url) {\n  imageUrl = data.data.generated[0].url;\n} else if (data.url) {\n  imageUrl = data.url;\n}\n\nif (!imageUrl && data.data?.task_id) {\n  // Async task - need polling (handle in a separate polling sub-workflow or use wait node)\n  console.log('Freepik async task ID:', data.data.task_id);\n  imageUrl = `PENDING_TASK:${data.data.task_id}`;\n}\n\nif (!imageUrl) {\n  console.error('Could not extract image URL from Freepik response:', JSON.stringify(data).substring(0, 300));\n  imageUrl = 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&auto=format&fit=crop';\n}\n\n// Get the post data from earlier in the workflow\nconst postData = $('Parse Claude Response').first().json;\npostData.image = imageUrl;\n\nconsole.log('Image URL:', imageUrl);\nreturn [{ json: postData }];"
+      },
+      "id": "extract-image-url",
+      "name": "Extract Image URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1920, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// For non-Freepik platforms: prepare post data with empty image\n// A notification will be sent to remind you to manually generate\nconst postData = $input.first().json;\npostData.image = '';\npostData.manual_generation_required = true;\nreturn [{ json: postData }];"
+      },
+      "id": "prepare-manual",
+      "name": "Prepare Manual Post",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1680, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge both branches\nconst postData = $input.first().json;\nreturn [{ json: postData }];"
+      },
+      "id": "merge-branches",
+      "name": "Merge Post Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2160, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "requestMethod": "GET",
+        "url": "=https://api.github.com/repos/{{ $env.GITHUB_REPO }}/contents/content/posts.json",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "ref", "value": "main" }
+          ]
+        }
+      },
+      "id": "fetch-posts-json",
+      "name": "Fetch posts.json from GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2400, 300],
+      "notes": "Requires GitHub API credential (Personal Access Token with repo scope)"
+    },
+    {
+      "parameters": {
+        "jsCode": "const githubResponse = $input.first().json;\nconst newPost = $('Merge Post Data').first().json;\n\n// Decode current posts.json from base64\nlet currentData;\ntry {\n  const decoded = Buffer.from(githubResponse.content.replace(/\\n/g, ''), 'base64').toString('utf-8');\n  currentData = JSON.parse(decoded);\n} catch(e) {\n  currentData = {\n    last_updated: '',\n    influencer: { name: 'Nova Linh', handle: '@novalinhofficial' },\n    posts: []\n  };\n}\n\n// Check for duplicate\nconst exists = currentData.posts.some(p => p.id === newPost.id);\nif (exists) {\n  throw new Error(`Post ${newPost.id} already exists. Skipping.`);\n}\n\n// Prepend new post\ncurrentData.posts.unshift(newPost);\ncurrentData.last_updated = new Date().toISOString().split('T')[0];\n\n// Encode to base64\nconst updatedJson = JSON.stringify(currentData, null, 2);\nconst encoded = Buffer.from(updatedJson).toString('base64');\n\nreturn [{\n  json: {\n    sha: githubResponse.sha,\n    content: encoded,\n    post_title: newPost.title,\n    post_id: newPost.id,\n    manual_required: newPost.manual_generation_required || false\n  }\n}];"
+      },
+      "id": "build-commit",
+      "name": "Build GitHub Commit",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2640, 300]
+    },
+    {
+      "parameters": {
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "requestMethod": "PUT",
+        "url": "=https://api.github.com/repos/{{ $env.GITHUB_REPO }}/contents/content/posts.json",
+        "sendBody": true,
+        "contentType": "json",
+        "body": {
+          "message": "=[Nova] Add: {{ $json.post_title }} ({{ new Date().toISOString().split('T')[0] }})",
+          "content": "={{ $json.content }}",
+          "sha": "={{ $json.sha }}",
+          "branch": "main"
+        }
+      },
+      "id": "push-to-github",
+      "name": "Push to GitHub",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2880, 300],
+      "notes": "Netlify detects this push and auto-deploys the website within ~60 seconds."
+    },
+    {
+      "parameters": {
+        "jsCode": "const commitResult = $input.first().json;\nconst buildData = $('Build GitHub Commit').first().json;\n\n// Log success\nconsole.log('===== NOVA LINH DAILY POST PUBLISHED =====');\nconsole.log('Post:', buildData.post_title);\nconsole.log('ID:', buildData.post_id);\nconsole.log('Manual generation needed:', buildData.manual_required);\nconsole.log('GitHub commit:', commitResult.commit?.sha?.substring(0, 8));\nconsole.log('Netlify deploying... (check in ~60s)');\n\nreturn [{\n  json: {\n    success: true,\n    post_title: buildData.post_title,\n    post_id: buildData.post_id,\n    manual_generation_required: buildData.manual_required,\n    commit_sha: commitResult.commit?.sha?.substring(0, 8),\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "id": "success-log",
+      "name": "Log Success",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3120, 300]
+    }
+  ],
+  "connections": {
+    "Daily 9AM Trigger": {
+      "main": [[{ "node": "Search X for Trends", "type": "main", "index": 0 }]]
+    },
+    "Search X for Trends": {
+      "main": [[{ "node": "Extract Trending Reference", "type": "main", "index": 0 }]]
+    },
+    "Extract Trending Reference": {
+      "main": [[{ "node": "Generate Prompt (Claude)", "type": "main", "index": 0 }]]
+    },
+    "Generate Prompt (Claude)": {
+      "main": [[{ "node": "Parse Claude Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Claude Response": {
+      "main": [[{ "node": "Route by Platform", "type": "main", "index": 0 }]]
+    },
+    "Route by Platform": {
+      "main": [
+        [{ "node": "Generate Image (Freepik)", "type": "main", "index": 0 }],
+        [{ "node": "Prepare Manual Post", "type": "main", "index": 0 }]
+      ]
+    },
+    "Generate Image (Freepik)": {
+      "main": [[{ "node": "Extract Image URL", "type": "main", "index": 0 }]]
+    },
+    "Extract Image URL": {
+      "main": [[{ "node": "Merge Post Data", "type": "main", "index": 0 }]]
+    },
+    "Prepare Manual Post": {
+      "main": [[{ "node": "Merge Post Data", "type": "main", "index": 0 }]]
+    },
+    "Merge Post Data": {
+      "main": [[{ "node": "Fetch posts.json from GitHub", "type": "main", "index": 0 }]]
+    },
+    "Fetch posts.json from GitHub": {
+      "main": [[{ "node": "Build GitHub Commit", "type": "main", "index": 0 }]]
+    },
+    "Build GitHub Commit": {
+      "main": [[{ "node": "Push to GitHub", "type": "main", "index": 0 }]]
+    },
+    "Push to GitHub": {
+      "main": [[{ "node": "Log Success", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": ["nova-linh", "ai-influencer", "daily-automation"],
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "nova-linh-workflow-v1"
+  }
+}

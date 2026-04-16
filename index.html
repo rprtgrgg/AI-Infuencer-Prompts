@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Linh — AI Prompt Reference</title>
+  <meta name="description" content="Daily AI image and video prompts for Nova Linh. Find a trending reference photo, copy the prompt, paste into Freepik, Kling, or Higgsfield." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & Base ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f0f0f;
+      color: #e8e0d8;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Variables ───────────────────────────────── */
+    :root {
+      --accent: #d4845a;
+      --accent-dim: rgba(212,132,90,0.15);
+      --accent-border: rgba(212,132,90,0.3);
+      --surface: #1a1a1a;
+      --surface-2: #242424;
+      --border: rgba(255,255,255,0.08);
+      --muted: #6b6560;
+      --text: #e8e0d8;
+      --text-dim: #9a9290;
+      --mono: 'JetBrains Mono', monospace;
+      --radius: 12px;
+      --transition: 0.2s ease;
+    }
+
+    /* ── Nav ─────────────────────────────────────── */
+    .nav {
+      position: sticky; top: 0; z-index: 50;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px;
+      height: 60px;
+      background: rgba(15,15,15,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-brand {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+    .nav-brand span { color: var(--accent); }
+    .nav-meta { font-size: 13px; color: var(--muted); }
+    .nav-count { color: var(--accent); font-weight: 500; }
+
+    /* ── Page header ─────────────────────────────── */
+    .page-header {
+      padding: 48px 32px 32px;
+      border-bottom: 1px solid var(--border);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .page-title { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .page-title span { color: var(--accent); }
+    .page-desc { font-size: 14px; color: var(--text-dim); max-width: 560px; line-height: 1.7; }
+
+    /* ── Search ──────────────────────────────────── */
+    .search-wrap {
+      padding: 20px 32px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .search-input {
+      width: 100%; max-width: 400px;
+      padding: 10px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .search-input:focus { border-color: var(--accent-border); }
+    .search-input::placeholder { color: var(--muted); }
+
+    /* ── Filter bar ──────────────────────────────── */
+    .filter-bar {
+      display: flex; align-items: center; gap: 8px;
+      padding: 16px 32px 0;
+      max-width: 1100px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .filter-label { font-size: 11px; color: var(--muted); margin-right: 4px; text-transform: uppercase; letter-spacing: 0.8px; }
+    .filter-btn {
+      padding: 5px 13px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-dim);
+      transition: all var(--transition);
+    }
+    .filter-btn:hover { border-color: var(--accent-border); color: var(--accent); }
+    .filter-btn.active { background: var(--accent-dim); border-color: var(--accent-border); color: var(--accent); }
+
+    /* ── Prompt list ─────────────────────────────── */
+    .prompt-list {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 32px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* ── Prompt card ─────────────────────────────── */
+    .prompt-card {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color var(--transition);
+    }
+    .prompt-card:hover { border-color: rgba(255,255,255,0.13); }
+
+    /* Reference image column */
+    .card-ref {
+      position: relative;
+      background: var(--surface-2);
+      min-height: 200px;
+    }
+    .card-ref img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-ref-empty {
+      width: 100%;
+      height: 100%;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      padding: 16px;
+    }
+    .card-ref-empty span { font-size: 28px; }
+    .ref-badge {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* Card body column */
+    .card-body {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-title-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+    .card-date { font-size: 11px; color: var(--muted); white-space: nowrap; }
+
+    /* Pills */
+    .card-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+    .pill {
+      padding: 3px 9px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .pill-platform { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-border); }
+    .pill-type { background: rgba(255,255,255,0.05); color: var(--text-dim); border: 1px solid var(--border); }
+    .pill-tag { background: rgba(255,255,255,0.04); color: var(--muted); border: 1px solid rgba(255,255,255,0.05); }
+
+    /* Why this works */
+    .card-why {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.6;
+      padding: 9px 12px;
+      background: rgba(255,255,255,0.025);
+      border-left: 2px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+    }
+    .card-why strong {
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+
+    /* Prompt text */
+    .prompt-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .prompt-text {
+      font-family: var(--mono);
+      font-size: 12px;
+      line-height: 1.75;
+      color: #c0b8b0;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      flex: 1;
+    }
+
+    /* Copy button */
+    .copy-btn {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .copy-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+    .copy-btn.copied { background: #3d9e6b; }
+
+    /* ── Empty / loading ──────────────────────────── */
+    .empty {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--muted);
+    }
+    .empty-icon { font-size: 36px; margin-bottom: 12px; }
+    .empty-title { font-size: 17px; font-weight: 600; color: var(--text-dim); margin-bottom: 6px; }
+
+    /* ── Toast ────────────────────────────────────── */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      background: #3d9e6b;
+      color: #fff;
+      padding: 11px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.22s ease;
+      pointer-events: none;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ───────────────────────────────── */
+    @media (max-width: 700px) {
+      .nav, .page-header, .search-wrap, .filter-bar, .prompt-list { padding-left: 16px; padding-right: 16px; }
+      .prompt-card { grid-template-columns: 1fr; }
+      .card-ref { height: 200px; min-height: unset; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-brand">Nova <span>Linh</span> — Prompt Reference</div>
+    <div class="nav-meta"><span class="nav-count" id="post-count">0</span> prompts published</div>
+  </nav>
+
+  <div class="page-header">
+    <h1 class="page-title">Daily <span>AI Prompts</span></h1>
+    <p class="page-desc">
+      Each entry has a <strong style="color:var(--text)">reference photo</strong> from trending content on X or Threads,
+      plus a <strong style="color:var(--text)">detailed prompt</strong> you copy and paste directly into
+      Freepik Mystic, Kling AI, or Higgsfield to generate Nova's version.
+    </p>
+  </div>
+
+  <div class="search-wrap">
+    <input class="search-input" id="search" type="text" placeholder="Search by location, style, platform…" />
+  </div>
+
+  <div class="filter-bar">
+    <span class="filter-label">Platform:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="freepik">Freepik Mystic</button>
+    <button class="filter-btn" data-filter="kling">Kling AI</button>
+    <button class="filter-btn" data-filter="higgsfield">Higgsfield</button>
+    <button class="filter-btn" data-filter="video">Video only</button>
+    <button class="filter-btn" data-filter="image">Image only</button>
+  </div>
+
+  <div class="prompt-list" id="list"></div>
+
+  <div class="toast" id="toast">✓ Prompt copied to clipboard</div>
+
+  <script>
+    let allPosts = [];
+
+    async function load() {
+      try {
+        const r = await fetch('content/posts.json?v=' + Date.now());
+        const d = await r.json();
+        allPosts = d.posts || [];
+      } catch {
+        allPosts = [];
+      }
+      document.getElementById('post-count').textContent = allPosts.length;
+      render(allPosts);
+    }
+
+    function render(posts) {
+      const list = document.getElementById('list');
+      if (!posts.length) {
+        list.innerHTML = `<div class="empty"><div class="empty-icon">📋</div><h3 class="empty-title">No prompts yet</h3><p>Check back tomorrow — a new prompt drops daily.</p></div>`;
+        return;
+      }
+      list.innerHTML = posts.map(card).join('');
+    }
+
+    function card(p) {
+      const tags = (p.tags || []).slice(0, 4).map(t => `<span class="pill pill-tag">${esc(t)}</span>`).join('');
+
+      const refSection = p.reference_image
+        ? `<img src="${esc(p.reference_image)}" alt="Reference" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="card-ref-empty" style="display:none"><span>🖼️</span><p>Image unavailable</p></div>`
+        : `<div class="card-ref-empty"><span>🖼️</span><p>Reference photo<br>added daily</p></div>`;
+
+      return `
+        <div class="prompt-card">
+          <div class="card-ref">
+            ${refSection}
+            <div class="ref-badge">Reference</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <div class="card-title">${esc(p.title)}</div>
+              <div class="card-date">${fmtDate(p.date)}</div>
+            </div>
+            <div class="card-pills">
+              <span class="pill pill-platform">${esc(p.platform)}</span>
+              <span class="pill pill-type">${p.type === 'video' ? '🎬 Video' : '📸 Image'}</span>
+              ${tags}
+            </div>
+            ${p.trending_reference ? `<div class="card-why"><strong>Why this works</strong>${esc(p.trending_reference)}</div>` : ''}
+            <div class="prompt-label">Prompt — copy &amp; paste into your AI platform</div>
+            <div class="prompt-text">${esc(p.prompt)}</div>
+            <button class="copy-btn" id="btn-${esc(p.id)}" onclick="copyPrompt('${esc(p.id)}')">
+              Copy Prompt
+            </button>
+          </div>
+        </div>`;
+    }
+
+    function copyPrompt(id) {
+      const p = allPosts.find(x => x.id === id);
+      if (!p) return;
+      navigator.clipboard.writeText(p.prompt).then(() => {
+        const btn = document.getElementById('btn-' + id);
+        if (btn) { btn.textContent = '✓ Copied!'; btn.classList.add('copied'); }
+        showToast();
+        setTimeout(() => {
+          if (btn) { btn.textContent = 'Copy Prompt'; btn.classList.remove('copied'); }
+        }, 2200);
+      });
+    }
+
+    function showToast() {
+      const t = document.getElementById('toast');
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2000);
+    }
+
+    // Filters
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+      });
+    });
+    document.getElementById('search').addEventListener('input', applyFilters);
+
+    function applyFilters() {
+      const q = document.getElementById('search').value.toLowerCase();
+      const f = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
+      const out = allPosts.filter(p => {
+        const mf = f === 'all'
+          || p.platform.toLowerCase().includes(f)
+          || p.type === f;
+        const ms = !q
+          || p.title.toLowerCase().includes(q)
+          || p.prompt.toLowerCase().includes(q)
+          || (p.tags || []).some(t => t.toLowerCase().includes(q));
+        return mf && ms;
+      });
+      render(out);
+    }
+
+    function esc(s) {
+      return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#039;');
+    }
+    function fmtDate(d) {
+      if (!d) return '';
+      try { return new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
+      catch { return d; }
+    }
+
+    load();
+  </script>
+</body>
+</html>

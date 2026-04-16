@@ -1,0 +1,25 @@
+# Secrets — NEVER commit these
+.env
+credentials.json
+token.json
+
+# Temp files
+.tmp/
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Generated videos (large files — upload manually to GitHub)
+assets/images/*.mp4
+assets/images/*.mov
