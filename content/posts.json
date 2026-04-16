@@ -1,11 +1,22 @@
 {
-  "last_updated": "2026-04-16",
+  "last_updated": "2026-04-16T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
     "handle": "@novalinhofficial"
   },
   "posts": [
+    {
+      "id": "post-007",
+      "date": "2026-04-16",
+      "title": "Gold Warrior at Coachella Desert",
+      "platform": "Freepik Mystic",
+      "type": "image",
+      "reference_image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&auto=format&fit=crop&q=80",
+      "prompt": "Cinematic editorial portrait of a 24-year-old Vietnamese-Filipino woman standing alone in the Coachella Valley desert at golden hour. She wears a stunning gold-leaf embroidered crop corset with flowing tassel-trimmed high-waisted shorts — Filipino weaving patterns subtly visible in the fabric. Delicate gold accessories: layered necklaces, small ear cuffs, stacked bangles. Her dark hair is half-up with loose pieces framing her face, moving slightly in the warm desert wind. She stands with quiet confidence, one hand lifted to shield her eyes from the low sun as she gazes toward the mountains. The Indio desert landscape surrounds her — dry golden grass, warm dust haze, purple-blue mountains in the background. Rich low-angle golden light bathes everything in amber. Shot on 35mm analog film, subtle grain, slight overexposure in the highlights. Intimate and raw — not posed, not perfect. Ultra-realistic editorial fashion photography.",
+      "tags": ["festival", "coachella", "filipina", "fashion", "golden-hour"],
+      "trending_reference": "BINI became the first Filipino act to perform at Coachella 2026 this week — #BINI_CoachellaWk1 hit #1 trending globally. Their gold warrior outfits made Vogue and Teen Vogue's best-dressed lists. Filipino pride content is at peak engagement right now. Nova's Filipino roots make this the perfect moment to ride the wave."
+    },
     {
       "id": "post-001",
       "date": "2026-04-16",
