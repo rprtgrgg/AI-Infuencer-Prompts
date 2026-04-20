@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T09:00:00",
+  "last_updated": "2026-04-20T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-010",
+      "date": "2026-04-20",
+      "title": "Songkran Chaos on Chiang Mai Moat",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.pexels.com/photos/17148081/pexels-photo-17148081.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman stands at the edge of the old city moat during Chiang Mai's Songkran water festival, completely soaking wet and laughing through it. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. Hair completely wet and clinging to her cheeks and neck in heavy dark waves. She wears a short floral wrap skirt in pale yellow with a fitted white ribbed crop top — both soaked and clinging to her skin. She laughs openly, caught mid-moment as a bucket of water hits her from the left — eyes squinting shut, head tilted back, hands reaching up instinctively. A dense, joyful Songkran crowd softly blurred in every direction behind her — people with water guns raised, faces wet, pickup trucks loaded with water tanks, laughing strangers and splashing kids in a blur of colour and motion. Bright midday tropical sunlight filtered through a cool water mist hanging in the air. Shot on iPhone, handheld, slight natural camera shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "thailand", "songkran", "festival", "video"],
+      "trending_reference": "Songkran 2026 generated over 424 million social media engagements from 870,000+ posts in its opening week — making it the most viral Southeast Asian cultural event of April 2026, with Chiang Mai's moat water battle dominating TikTok and X. A Vietnamese-Filipino creator posting Songkran content on the active tail of the trend captures both SEA cultural identity and bucket-list travel, maximising algorithm reach while the cultural moment is still in circulation."
+    },
     {
       "id": "post-009",
       "date": "2026-04-19",
