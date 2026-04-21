@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T09:00:00",
+  "last_updated": "2026-04-21T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-011",
+      "date": "2026-04-21",
+      "title": "Lantern Glow on Hội An Streets",
+      "platform": "Freepik Mystic",
+      "type": "image",
+      "reference_image": "https://images.pexels.com/photos/34949995/pexels-photo-34949995.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman stands along the narrow lantern-lit streets of Hội An's Ancient Town at dusk, the Thu Bon River glimmering faintly behind her. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a modern silk midi dress in deep rust-orange with a subtle floral jacquard pattern — a fitted Mandarin collar, short flutter sleeves, a softly flared A-line skirt — contemporary yet rooted, something between a Vietnamese áo dài and a modern cocktail dress. Small gold stud earrings catch the lantern glow. She looks upward and slightly to one side, lips parted in a quiet, wondering expression — as if a floating paper lantern just drifted past above her. Hundreds of warm amber, gold, and rose-pink paper lanterns hang in dense clusters overhead and along both sides of the ancient alley, glowing softly against a deep indigo dusk sky. A slow-moving evening crowd of visitors and locals softly blurred in the background — couples pausing to look up at the lanterns, vendors with flower trays, strangers dissolving into a warm amber bokeh haze behind her. Warm amber lantern glow from directly above, catching the soft planes of her face in rich gold-orange light with deep natural shadows beneath her jaw. Shot on iPhone 15 Pro, natural light, slightly grainy, candid. Not retouched. Real, imperfect, human.",
+      "tags": ["travel", "vietnam", "hoi-an", "lanterns", "festival", "fashion"],
+      "trending_reference": "Hội An's Full Moon Lantern Festival is surging on X and Threads ahead of the April 29 full moon — Vietnamese travel content is peaking across SEA audiences this week, with Ancient Town lantern posts averaging 800K+ impressions and the 'New Chinese Style' silk fashion trend (Mandarin collar, jacquard fabrics) dominating influencer fashion simultaneously. A Vietnamese-Filipino creator posting Hội An lantern content the week before the full moon hits the algorithm at peak cultural interest, combining diaspora identity pride with one of Southeast Asia's most visually iconic travel moments."
+    },
     {
       "id": "post-010",
       "date": "2026-04-20",
