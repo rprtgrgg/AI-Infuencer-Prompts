@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T09:00:00",
+  "last_updated": "2026-04-22T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-012",
+      "date": "2026-04-22",
+      "title": "Lost in Busan's Pastel Village Maze",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.pexels.com/photos/18870503/pexels-photo-18870503.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman wanders through the narrow, sun-drenched staircase alleys of Gamcheon Culture Village, Busan — pastel-coloured houses in mint, coral, sky-blue and lemon yellow stacked up the hillside all around her, a glimmer of the sea visible between rooftops in the far distance. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears an oversized soft lavender linen blazer over a fitted white ribbed tank, high-waisted light-wash denim shorts, and white canvas sneakers — a small cream leather crossbody bag slung at her hip. She pauses mid-alley and slowly turns to look up at the layered colourful rooftops above her, then catches herself being filmed, breaking into a shy, unguarded smile. A relaxed scatter of tourists and locals softly blurred behind her — couples wandering, a street cat perched on a painted wall, visitors with cameras dissolving into warm pastel bokeh. Warm midday soft light filtering through the narrow alley, casting gentle shadows across her cheekbones and the painted walls around her. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "busan", "korea", "gamcheon", "aesthetic", "video"],
+      "trending_reference": "Gamcheon Culture Village in Busan is dominating Instagram Reels and TikTok in 2026 — rated by CNN as 'Asia's most artistic village' and called the most viral Korea photo spot of the year, with the 'aesthetic Korea solo girl trip' format exploding across X and Threads in April. A Vietnamese-Filipino creator wandering Gamcheon's pastel alleys combines K-culture's massive global reach with the SEA identity narrative, hitting two of the highest-engagement travel audiences simultaneously while the format is at peak virality."
+    },
     {
       "id": "post-011",
       "date": "2026-04-21",
