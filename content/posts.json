@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-23T09:00:00",
+  "last_updated": "2026-04-24T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-014",
+      "date": "2026-04-24",
+      "title": "Da Nang Rooftop and Nowhere to Be",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://img.youtube.com/vi/v56x4cqnUyQ/maxresdefault.jpg",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman sits at an open-air rooftop café in Da Nang, Vietnam — the wide white curve of My Khe Beach stretching below, the South China Sea shimmering in the late afternoon light, the Dragon Bridge just visible in the city haze behind her. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a flowy sleeveless cream linen top loosely tucked into high-waisted terracotta linen wide-leg pants — small gold hoop earrings, no other jewelry. A ceramic mug of Vietnamese cà phê trứng sits on the table in front of her. She wraps both hands around the mug and gazes out at the sea, then slowly turns toward the camera with an unguarded, quiet smile — the look of someone who just realized they never want to go back. A relaxed crowd of café-goers and expats softly blurred behind her — people on laptops, couples talking, a waiter weaving between tables, golden afternoon light catching glasses and coffee cups in warm bokeh. Warm low-angle golden light from the west, catching the side of her face and casting a long soft shadow across the rooftop. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "vietnam", "da-nang", "cafe", "expat-life", "lifestyle"],
+      "trending_reference": "On April 23, 2026, NPR ran a major story syndicated simultaneously across 15+ public radio stations — 'How TikTok is driving American expats to Southeast Asia' — with Da Nang, Vietnam as the central destination, putting it at the top of every English-speaking audience's travel radar overnight. A Vietnamese-Filipino creator posting Da Nang rooftop café content the morning after this viral news cycle peaks captures both the aspirational 'expat dream life' audience and SEA diaspora identity pride, with the 'cà phê trứng at golden hour' visual being the exact aesthetic that made Da Nang go viral in the first place."
+    },
     {
       "id": "post-013",
       "date": "2026-04-23",
