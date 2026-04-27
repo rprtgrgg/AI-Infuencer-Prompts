@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-25T09:00:00",
+  "last_updated": "2026-04-27T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-016",
+      "date": "2026-04-27",
+      "title": "Into the Falls at Kuang Si",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman stands waist-deep in the lower turquoise pool of Kuang Si Falls, Luang Prabang, Laos — cascading blue-white water tumbling over white limestone terraces directly behind her, dense green jungle rising on every side, sunlight filtering through the rainforest canopy in soft, shifting beams. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally — wet at the tips, clinging softly to her jaw and collarbone. She wears a simple burnt-orange two-piece bikini, minimal and unfussy. She tilts her head back slowly and closes her eyes, letting the cool waterfall mist settle on her face — then opens them and looks directly into the camera with a quiet, unhurried gaze, as if she has nowhere else to be. A loose scatter of other swimmers softly blurred in the shallows around her — distant figures wading, a couple in the water behind her, the tiered falls cascading into soft turquoise bokeh. Bright, dappled jungle light from directly above filtering through the canopy, cool and luminous on the water surface, catching the natural texture of her wet skin. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "laos", "luang-prabang", "waterfall", "video", "swim"],
+      "trending_reference": "Luang Prabang, Laos has exploded as Southeast Asia's breakthrough travel destination of 2026 — the China-Laos Railway has made it newly accessible, driving 68,000+ visitors over Lao New Year alone, with Kuang Si Falls generating millions of TikTok views as the most-shared undiscovered waterfall in the region. With Thailand and Bali already oversaturated, creators posting first-mover Laos content are capturing massive organic reach from audiences hungry for the 'next Bali,' making April 2026 the exact peak moment to own this location before the mainstream wave arrives."
+    },
     {
       "id": "post-015",
       "date": "2026-04-25",
