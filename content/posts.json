@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24T09:00:00",
+  "last_updated": "2026-06-25T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-018",
+      "date": "2026-06-25",
+      "title": "Butter-Yellow Linen by Palma's Cathedral",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.pexels.com/photos/19765743/pexels-photo-19765743.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman strolls along the harbor promenade beneath Palma Cathedral in Palma de Mallorca, Spain, at golden hour — the Gothic cathedral spires glowing amber behind her, their reflection rippling across the still harbor water, sailboats bobbing gently in the distance. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a flowing butter-yellow linen midi dress with a relaxed silhouette and thin tie straps, woven raffia sandals, and small gold hoop earrings. She walks slowly along the promenade, then glances back over her shoulder mid-step with a soft, unguarded laugh, one hand brushing a loose strand of hair from her face. A relaxed evening crowd of tourists and locals softly blurred behind her — couples pausing for photos, a vendor with a gelato cart, cyclists passing along the waterfront dissolving into warm golden bokeh. Warm low-angle golden-hour backlight from across the harbor, rimming her silhouette in soft amber light and catching the texture of the linen fabric. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "mallorca", "spain", "euro-summer", "butter-yellow", "video"],
+      "trending_reference": "The 'Euro Summer' aesthetic — linen fabrics, coastal color palettes, and romantic Mediterranean vacation imagery — is the dominant lifestyle trend across Instagram and TikTok this June, running alongside butter yellow as 2026's breakout fashion color in everything from skirts to accessories. Palma de Mallorca is simultaneously surging as one of summer 2026's hottest underrated European destinations on travel platforms, so a butter-yellow linen golden-hour moment at its iconic cathedral harbor stacks three peaking trends into one shot for maximum reach."
+    },
     {
       "id": "post-017",
       "date": "2026-06-24",
