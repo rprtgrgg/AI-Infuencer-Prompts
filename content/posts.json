@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T09:00:00",
+  "last_updated": "2026-06-27T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-020",
+      "date": "2026-06-27",
+      "title": "Aquamarine Hour at El Nido's Lagoon",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.pexels.com/photos/13874296/pexels-photo-13874296.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman paddles a small outrigger bangka boat into the heart of Big Lagoon in El Nido, Palawan, Philippines — sheer turquoise-aquamarine water completely encircled by towering black limestone karst cliffs, a narrow gap of bright sky visible far above between the rock walls. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a shimmering aquamarine sequined slip dress with thin straps, the fabric catching glints of teal and seafoam light, hemline trailing just above the waterline as she kneels in the boat — a single delicate gold anklet, no other jewelry. She lets one hand trail through the glassy turquoise water beside the boat, then looks up and back toward the camera with a quiet, sun-struck smile, hair lifting slightly in the breeze funneling through the cliffs. A couple of small bangka boats and kayakers softly blurred in the distance, paddling near the lagoon's far wall, dissolving into soft aquamarine bokeh against the dark cliff face. Bright midday light bouncing off the limestone walls and the water's surface, casting a cool turquoise glow up onto her skin and the underside of her jaw. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "el-nido", "palawan", "philippines", "aquamarine", "video"],
+      "trending_reference": "Aquamarine has been crowned the defining color of summer 2026 by Marie Claire, Who What Wear, and Coveteur, with mermaidcore sequins and crystallized accents dominating runways and Pinterest searches this month. El Nido's Big Lagoon is the most photographed real-world embodiment of that exact aquamarine hue, so dressing Nova in a sequined aquamarine slip dress on its turquoise water lets her visually claim 2026's biggest fashion color trend on a destination travel audiences already can't stop saving."
+    },
     {
       "id": "post-019",
       "date": "2026-06-26",
