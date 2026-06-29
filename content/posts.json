@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T09:00:00",
+  "last_updated": "2026-06-29T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-022",
+      "date": "2026-06-29",
+      "title": "Cobalt-Blue Golden Hour at Angkor Wat",
+      "platform": "Higgsfield",
+      "type": "video",
+      "reference_image": "https://images.pexels.com/photos/15890613/pexels-photo-15890613.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman walks slowly along the ancient stone causeway leading into Angkor Wat, Siem Reap, Cambodia, in the late afternoon — the temple's iconic lotus-bud towers rising behind her, their weathered sandstone glowing warm in the fading light, the reflecting pool beside the causeway catching a mirror image of the spires. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a flowing cobalt-blue silk maxi dress with a draped halter neckline and a soft side slit, the saturated blue vivid against the temple's pale grey stone, paired with simple gold drop earrings. She slows mid-step on the causeway, turning back over one shoulder with a quiet, unhurried smile, one hand lightly lifting the hem of her dress as the warm breeze catches it. A loose scatter of other visitors softly blurred along the causeway and reflecting pool behind her — tourists pausing to take photos, a few monks in saffron robes crossing in the distance, dissolving into warm golden-grey bokeh against the ancient stone. Warm low-angle late-afternoon light raking across the temple façade, gilding her skin and the cobalt fabric in soft amber tones while the towers behind her deepen into silhouette. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["travel", "cambodia", "angkor-wat", "siem-reap", "cobalt-blue", "video"],
+      "trending_reference": "Siem Reap's Angkor Wat has surged to become Asia's top bucket-list destination in 2026, with travel photographers shifting away from the overcrowded sunrise reflection shot toward more intimate golden-hour afternoon visits, while cobalt blue has been crowned 2026's single biggest fashion color trend by Marie Claire and Who What Wear, dominating runways from Chanel to Loewe. Pairing Nova in a flowing cobalt-blue silk dress against Angkor Wat's ancient towers at golden hour lets her claim the year's most in-demand Asian destination and its defining color trend in one respectful, shareable shot — sidestepping the disrespectful 'temple run' content currently drawing backlash."
+    },
     {
       "id": "post-021",
       "date": "2026-06-28",
