@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T09:00:00",
+  "last_updated": "2026-07-01T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-024",
+      "date": "2026-07-01",
+      "title": "Goal Scream at the Miami Fan Zone",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&auto=format&fit=crop&q=80",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman stands in the heart of the FIFA Fan Festival at Bayfront Park, Miami, on a warm July evening — a massive outdoor screen blazing with live World Cup match action directly behind her, flags from every nation strung overhead, the lights of Biscayne Bay glimmering in the haze beyond the crowd. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a fitted deep red satin spaghetti-strap mini dress — slightly glossy fabric catching the stage lights — with a delicate gold chain necklace and barely-there gold flat sandals. A temporary FIFA World Cup 2026 wristband on one wrist. She's lost in the match for a moment, eyes fixed on the giant screen overhead, mouth open mid-gasp — then a goal is scored, the crowd erupts, and she spins toward camera laughing with her arms thrown wide, completely unselfconscious in the pure joy of it, one hand reaching out to grab a stranger's arm in celebration. A roaring, joyful crowd of World Cup fans softly blurred in every direction behind her — people in team jerseys from a dozen nations raising scarves and flags, strangers high-fiving, glowing screens and flag colors dissolving into warm electric bokeh behind her. Warm outdoor tungsten flood lighting from the stage rigging above, mixing with the cool blue-white glow of the match screen behind her — her face caught between warm orange on her cheeks and cool blue reflected in her eyes, the mixed light of a live match at night. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["world-cup-2026", "miami", "fan-zone", "nightlife", "sports", "video"],
+      "trending_reference": "The FIFA World Cup 2026 Fan Festival at Miami's Bayfront Park has drawn 10,000+ fans per night across 23 consecutive days (June 13–July 5), with 5.5 million total attendees recorded across the 13 host cities in the group stage alone — making it the single biggest cultural moment on Earth right now. As the tournament enters its final knockout rounds in early July, goal-reaction clips captured on phones at fan zones are the most-saved and shared short-form videos on Instagram Reels and TikTok this week, meaning a candid goal-scream video in a red dress at Bayfront Park drops precisely as audience attention and algorithm amplification are both peaking."
+    },
     {
       "id": "post-023",
       "date": "2026-06-30",
