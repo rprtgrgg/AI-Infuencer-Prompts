@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T09:00:00",
+  "last_updated": "2026-07-06T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-029",
+      "date": "2026-07-06",
+      "title": "Silk Fringe Morning in Sapa Valley",
+      "platform": "Freepik Mystic",
+      "type": "image",
+      "reference_image": "https://images.pexels.com/photos/28000796/pexels-photo-28000796.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "prompt": "A 24-year-old Vietnamese-Filipino woman stands on a narrow earthen path winding between the vivid emerald rice terraces of Sapa, Vietnam — tier after tier of luminous green paddy fields cascading down the valley in every direction, the mist-wrapped Hoàng Liên Sơn mountains rising hazy and indigo behind her, soft July morning light filtering through a low cloud ceiling that makes everything glow. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a flowing caramel-toned sleeveless silk fringe midi dress — long razor-fine silk-thread tassels cascading from the fitted bodice all the way down the skirt, the whole garment rippling and swaying gently in the cool mountain breeze, the warm toffee silk a rich contrast against the vivid wet-green of the terraces behind her. Flat leather thong sandals, a single thin gold bangle on one wrist. No bag, no heavy accessories. She pauses mid-step on the narrow path and turns back over one shoulder — not posed, just glancing back down into the terraced valley below her, eyes soft and slightly distant, lips just parted, the silk fringe swaying around her legs in the mountain breeze. The look of someone standing inside a place so beautiful they forgot to take a photo. Soft, cool, diffused morning light from the low July cloud cover — no hard shadows, everything lit as if through thin mountain fog, the greens of the terraces unnaturally vivid against the grey-white sky, her skin catching the cool luminous glow of the mist. Shot on iPhone 15 Pro, natural light, slightly grainy, candid. Not retouched. Real, imperfect, human.",
+      "tags": ["sapa", "vietnam", "fringe-fashion", "rice-terraces", "mountain", "resortwear"],
+      "trending_reference": "Sapa, Vietnam has been named the #1 fastest-growing travel destination in Asia for 2026 by Agoda's New Horizons ranking, with July–August being peak photographic season when the rice terraces are described as 'bright green and full of life — a photographer's dream,' generating massive travel saves across Instagram and Pinterest right now. Elevated silk fringe fashion simultaneously surged 93% at NYFW spring/summer 2026, with Who What Wear and Marie Claire both naming refined silk-thread fringe as summer 2026's defining anti-minimalist trend — a free-spirited resortwear energy with perfect movement in mountain breeze photography."
+    },
     {
       "id": "post-028",
       "date": "2026-07-05",
