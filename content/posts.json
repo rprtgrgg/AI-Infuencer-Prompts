@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06T09:00:00",
+  "last_updated": "2026-07-07T09:00:00",
   "influencer": {
     "name": "Nova Linh",
     "persona": "24-year-old Vietnamese-Filipino AI model. Loves travel, cutesy aesthetics, and effortless style.",
@@ -7,6 +7,17 @@
     "face_description": "Light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally."
   },
   "posts": [
+    {
+      "id": "post-030",
+      "date": "2026-07-07",
+      "title": "KL Fashion Week Heat Outside the Show",
+      "platform": "Kling AI",
+      "type": "video",
+      "reference_image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&auto=format&fit=crop&q=80",
+      "prompt": "Cinematic video: A 24-year-old Vietnamese-Filipino woman steps out of a black SUV onto the sun-baked pavement outside the Putrajaya International Convention Centre in Kuala Lumpur, during the Southeast Asia Fashion Week — a crowd of street style photographers and attendees flowing past the glass entrance behind her, palm trees lining the avenue in the hot July afternoon. She has light-medium warm skin with natural texture — slight pores visible, no heavy retouching, skin that looks touched and lived-in. Almond-shaped dark brown eyes with a natural double eyelid and a soft warm gaze. Softly arched dark brown brows, slightly uneven in a natural way. A small straight nose with a slightly rounded tip. Full lips with a soft cupid's bow in a natural nude-pink, slightly chapped at the edges. An oval face with soft high cheekbones and a gentle rounded jaw — slight asymmetry, the way a real face looks. Long dark brown wavy hair, voluminous with face-framing layers, with a few loose strands falling across her face naturally. She wears a sleek contemporary two-piece co-ord in rich burnt-orange batik — a structured off-shoulder crop top with fitted seaming and a high-waisted wide-leg palazzo trouser in the same graphic botanical-print silk — the pattern bold and unmistakably Southeast Asian yet cut with the clean precision of high fashion. Pointed mule heels in nude patent leather, oversized amber tortoiseshell sunglasses, and one chunky gold chain necklace. Nothing else. She stands for a half-second on the pavement and glances back over her shoulder toward the camera — caught mid-step, a loose strand of dark hair across her cheek, a quiet half-smile — the expression of someone who isn't posing, just living inside a moment. A dense fashion week crowd softly blurred behind her — other attendees in equally bold looks crossing the entrance, a few street photographers with long lenses raised, PR staff in earpieces, pairs of friends filming each other, all dissolving into a blur of warm earth tones and muted architectural glass bokeh. Bright flat Malaysian afternoon light from directly overhead — that specifically tropical brightness with no golden softness, just clean white equatorial sun hitting the silk of her outfit and the sweat-warm skin of her collarbone, sharp and alive. Shot on iPhone, handheld, slight natural shake. Candid travel vlog feel. Cinematic 4K.",
+      "tags": ["kuala-lumpur", "fashion-week", "sea-fashion", "batik", "street-style", "video"],
+      "trending_reference": "The Southeast Asia Fashion Week is live in Kuala Lumpur July 5–11, 2026 — with the core B2B trade fair and street style moment happening today, July 7–8, at Putrajaya International Convention Centre — making KL the single hottest fashion destination in the region right now, with street style content from the event generating immediate organic reach across SEA creator audiences. Contemporary batik co-ords — traditional Southeast Asian botanical prints reimagined in clean, high-fashion silhouettes — are the single biggest design story emerging from SEA Fashion Weeks in 2026, championed by labels like Melinda Looi and Batik Boutique while simultaneously exploding on TikTok and Instagram as the 'heritage luxury' aesthetic defining next-gen Southeast Asian identity fashion."
+    },
     {
       "id": "post-029",
       "date": "2026-07-06",
